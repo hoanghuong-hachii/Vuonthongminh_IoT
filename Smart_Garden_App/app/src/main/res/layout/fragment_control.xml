@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1749049F"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Control">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/linear_ll"
+            android:orientation="horizontal"
+            android:background="#8C08A3"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Điều khiển thiết bị"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                ></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="220dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:id="@+id/text_fan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Quạt"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/im_temp_fan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fan" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/control_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                app:showText="true"
+                android:textOn="On"
+                android:textOff="Off"
+                ></androidx.appcompat.widget.SwitchCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="220dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:id="@+id/text_drip_pump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Nhỏ giọt"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/im_soil_dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/control_drippump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                app:showText="true"
+                android:textOn="On"
+                android:textOff="Off"
+                ></androidx.appcompat.widget.SwitchCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/text_Nebulizer_pump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Phun sương"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/im_hum_np"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/control_npump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                app:showText="true"
+                android:textOn="On"
+                android:textOff="Off"
+                ></androidx.appcompat.widget.SwitchCompat>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:id="@+id/textlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Đèn"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:background="@color/white"
+
+                />
+
+            <ImageView
+                android:id="@+id/im_light_ct"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/led"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/control_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                app:showText="true"
+                android:textOn="On"
+                android:textOff="Off"
+                ></androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

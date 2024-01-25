@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Trang chủ"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="Thông số môi trường"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/dashboard"/>
+<!--    <item android:title="Display_s"-->
+<!--        android:id="@+id/display_status"-->
+<!--        android:icon="@drawable/ic_display"/>-->
+    <item android:title="Điều khiển thiết bị "
+        android:id="@+id/control"
+        android:icon="@drawable/control"/>
+    <item android:title="Thông tin tài khoản"
+        android:id="@+id/me"
+        android:icon="@drawable/ic_me"/>
+<!--    <item android:title="Logout"-->
+<!--        android:id="@+id/logout"-->
+<!--        android:icon="@drawable/ic_logout"/>-->
+</menu>
